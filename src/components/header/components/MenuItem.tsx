@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { IconType } from "react-icons";
 
-type Props = {
+type MenuItemProps = {
   title: string;
   address: string;
   Icon: IconType;
 };
 
-export const MenuItem = ({ title, address, Icon }: Props) => {
+export const MenuItem = ({ title, address, Icon }: MenuItemProps) => {
   return (
     <div>
       <Link href={address} className=" mx-4 lg:mx-6 hover:text-amber-600">

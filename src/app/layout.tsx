@@ -1,6 +1,7 @@
 import { Header } from "@/components";
 
 import "./globals.css";
+import { Providers } from "./Providers";
 
 export default function RootLayout({
   children,
@@ -8,15 +9,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        {/* Header */}
-        <Header />
+        <Providers>
+          {/* Header */}
+          <Header />
 
-        {/* Navbar */}
+          {/* Navbar */}
 
-        {/* SearchBox */}
-        {children}
+          {/* SearchBox */}
+          {children}
+        </Providers>
       </body>
     </html>
   );

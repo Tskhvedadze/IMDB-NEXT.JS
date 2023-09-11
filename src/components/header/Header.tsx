@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { MenuItem } from "../menuItem/MenuItem";
+import { MenuItem } from "./components/MenuItem";
 
 import { AiFillHome } from "react-icons/ai";
 import { BsInfoCircleFill } from "react-icons/bs";
+import { DarkModeSwitch } from "./components/DarkModeSwitch";
 
 type HeaderProps = {};
 
@@ -14,7 +15,8 @@ export const Header = ({}: HeaderProps) => {
         <MenuItem title="ABOUT" address="/about" Icon={BsInfoCircleFill} />
       </div>
 
-      <div className="">
+      <div className=" flex  items-center space-x-5">
+        <DarkModeSwitch />
         <Link href="/">
           <h2 className=" text-2xl">
             <span className=" font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">
