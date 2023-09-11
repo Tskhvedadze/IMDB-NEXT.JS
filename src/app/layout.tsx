@@ -1,3 +1,5 @@
+import { Header } from "@/components";
+
 import "./globals.css";
 
 export default function RootLayout({
@@ -7,7 +9,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {/* Header */}
+        <Header />
+
+        {/* Navbar */}
+
+        {/* SearchBox */}
+        {children}
+      </body>
     </html>
   );
 }
