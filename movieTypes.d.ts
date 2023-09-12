@@ -3,6 +3,7 @@ export type MoviesT = {
   backdrop_path: string;
   id: number;
   title: string;
+  name: string;
   original_language: string;
   original_title: string;
   overview: string;
@@ -14,4 +15,5 @@ export type MoviesT = {
   video: boolean;
   vote_average: number;
   vote_count: number;
+  first_air_date: string;
 };
