@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 type ErrorProps = {
-  error: any;
+  error: string;
   reset: () => void;
 };
 
