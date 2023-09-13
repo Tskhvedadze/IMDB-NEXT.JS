@@ -16,9 +16,5 @@ export default async function Home({ searchParams }: any) {
     throw new Error("Failed to fetch data");
   }
 
-  return (
-    <div>
-      <Results results={result} />
-    </div>
-  );
+  return <Results results={result} />;
 }
